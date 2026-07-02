@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Family Trust Services — Stewardship & Legacy | Scott Stephens, Nashville</title>
+<meta name="description" content="Family Trust Services — the stewardship arm behind Pro Legacy Capital and the Pros to Joes podcast. Nashville-based. Building and protecting legacy for the long game.">
+<meta property="og:title" content="Family Trust Services — Stewardship & Legacy">
+<meta property="og:description" content="The Nashville home for Scott Stephens's work in legacy, real estate, and the Pros to Joes podcast.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://familytrustservices.org">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #0c0f0d;
+    --bg: #0c0f0d;
+    --forest: #1d2e23;
+    --forest-line: #2a3d31;
+    --gold: #c2a25a;
+    --gold-soft: #d8c08a;
+    --bone: #ece6d8;
+    --bone-dim: #9a988e;
+    --bone-faint: #6b6a62;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--bone);
+    font-family: 'Inter', system-ui, sans-serif;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    overflow: hidden;
+  }
+
+  /* ambient glow */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(29,46,35,0.55) 0%, rgba(12,15,13,0) 60%),
+                radial-gradient(ellipse at 50% 120%, rgba(29,46,35,0.4) 0%, rgba(12,15,13,0) 55%);
+    pointer-events: none; z-index: 0;
+  }
+
+  .page {
+    position: relative; z-index: 1;
+    min-height: 100%;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 48px 28px;
+  }
+
+  .topline {
+    display: flex; align-items: baseline; justify-content: center;
+    flex-wrap: nowrap; white-space: nowrap;
+    gap: clamp(10px, 2.4vw, 22px); margin-bottom: 44px;
+    opacity: 0; transform: translateY(12px); animation: rise .9s ease forwards .1s;
+  }
+  .mark {
+    font-family: 'Inter', system-ui, sans-serif; font-weight: 600;
+    font-size: clamp(11px, 2.4vw, 14px); letter-spacing: 0.2em; text-transform: uppercase;
+    color: var(--bone);
+  }
+  .mark span { color: var(--gold); }
+  .topline .dot { color: var(--bone-faint); font-size: clamp(9px, 2vw, 12px); }
+  .eyebrow {
+    font-size: clamp(9px, 2.1vw, 11.5px); letter-spacing: 0.28em; text-transform: uppercase;
+    color: var(--gold);
+  }
+  h1 {
+    font-family: 'Playfair Display', serif; font-weight: 400;
+    font-size: clamp(38px, 7vw, 72px); line-height: 1.04;
+    letter-spacing: -0.015em; color: var(--bone);
+    opacity: 0; transform: translateY(16px); animation: rise 1s ease forwards .3s;
+  }
+  h1 em { font-style: italic; color: var(--gold-soft); }
+  .lede {
+    max-width: 540px; margin: 30px auto 0; font-size: 16.5px;
+    color: var(--bone-dim); line-height: 1.7;
+    opacity: 0; transform: translateY(16px); animation: rise 1s ease forwards .45s;
+  }
+
+  /* two egg-shaped buttons at the bottom */
+  .buttons {
+    display: flex; gap: 16px; flex-wrap: wrap; justify-content: center;
+    margin-top: 52px;
+    opacity: 0; transform: translateY(16px); animation: rise 1s ease forwards .6s;
+  }
+  .egg {
+    text-decoration: none;
+    font-size: 13.5px; letter-spacing: 0.05em; font-weight: 500;
+    color: var(--bone);
+    border: 1px solid var(--forest-line);
+    background: linear-gradient(160deg, rgba(29,46,35,0.5), rgba(12,15,13,0.25));
+    padding: 13px 30px; border-radius: 999px;
+    transition: transform .3s cubic-bezier(.2,.7,.2,1), border-color .3s, color .3s, background .3s;
+  }
+  .egg:hover {
+    transform: translateY(-3px);
+    border-color: var(--gold);
+    color: var(--gold-soft);
+    background: linear-gradient(160deg, rgba(29,46,35,0.7), rgba(12,15,13,0.3));
+  }
+
+  .contact {
+    margin-top: 40px; font-size: 13px; color: var(--bone-faint); letter-spacing: 0.03em;
+    opacity: 0; animation: fade 1.2s ease forwards .8s;
+  }
+  .contact a { color: var(--bone-dim); text-decoration: none; transition: color .25s; }
+  .contact a:hover { color: var(--gold-soft); }
+
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+  @keyframes fade { to { opacity: 1; } }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+    .mark, .eyebrow, h1, .lede, .buttons, .contact { opacity: 1; transform: none; }
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="topline">
+    <span class="mark">Family Trust <span>Services</span></span>
+    <span class="dot">&middot;</span>
+    <span class="eyebrow">Stewardship &middot; Legacy &middot; Nashville</span>
+  </div>
+  <h1>Built for the<br><em>long game.</em></h1>
+  <p class="lede">The quiet engine behind the work — legacy and stewardship for families, founders, and the people who built something worth protecting.</p>
+
+  <div class="buttons">
+    <a class="egg" href="https://prolegacycapital.com" target="_blank" rel="noopener">Pro Legacy Capital</a>
+    <a class="egg" href="https://prostojoespodcast.com" target="_blank" rel="noopener">Pros to Joes</a>
+  </div>
+
+</div>
+
+</body>
+</html>
